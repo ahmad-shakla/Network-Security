@@ -6,13 +6,13 @@ Network Security : Swich Security configuration
 
 
 
-In most cases while you operate on a Cisco Switch chances that you have a low security configurations are high and in this blog i'm going to explain how to secure your switch.
+In most cases while you operate on a Cisco Switch chances that you have a low security configurations are high and in this lab i'm going to explain how to secure your switch.
 
 
 1.Shutdown
 
 after you finish creating your VLANs some attackers might use some of the open ports on your switch to do malicious activates  your network and to block them you'll need to shutdown all your unused ports here are the configurations you need :
-
+<b>
 switch>en
 
 switch#conf t
@@ -21,7 +21,7 @@ switch(config)#int range (all the ranges of your unused ports)
 
 switch(config-if-range)#shutdown
 
- 
+ </b>
 
 2.BlackHoles
 
